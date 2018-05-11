@@ -1,18 +1,17 @@
 #ifndef JSS136_316P2_HPP_INCLUDED
 #define JSS136_316P2_HPP_INCLUDED
 
-
 /**************************************
 Pieces of this code were modified from
 https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/
 
 *************************************/
-#include<iostream>
-#include <fstream>
-#include <string>
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include<iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -269,10 +268,11 @@ Graph* openFile(){
     cin >> filename;
 
     ifstream fileObj;
+    
     fileObj.open(filename);
+    
     if(!fileObj){
         cerr << "File did not open correctly. Please try again.\n";
-
     }
     //begin constructing the graph
     fileObj >> num_vertex;
