@@ -273,6 +273,7 @@ Graph* openFile(){
     
     if(!fileObj){
         cerr << "File did not open correctly. Please try again.\n";
+        return nullptr;
     }
     //begin constructing the graph
     fileObj >> num_vertex;
